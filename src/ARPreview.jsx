@@ -3,7 +3,8 @@ import * as THREE from "three";
 import { buildSensorMesh, disposeSensorMesh, patchRecordFromMesh } from "./sensorMeshThree.js";
 import { createBottleLatheGeometry } from "./bottleProfile.js";
 
-const BG_URL = "/Untitled.jpg";
+// Public file; must respect Vite base (e.g. GitHub Pages at /<repo>/)
+const BG_URL = `${import.meta.env.BASE_URL}Untitled.jpg`;
 
 /** Fixed mesh look — comes from scan, not user-edited */
 const MESH_COLOR = 0xb9c0bc;
